@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Sprites;
 
 public class MovementScript : MonoBehaviour {
-
+	public Rigidbody2D rigidbody2D;
 	// Use this for initialization
 	void Start () {
-		
+        //rigidbody2D = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +17,7 @@ public class MovementScript : MonoBehaviour {
 
     void FixedUpdate()
     {
+        var speed = 2;
         var mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Quaternion rot = Quaternion.LookRotation(transform.position - mousePosition, Vector3.forward);
         transform.rotation = rot;

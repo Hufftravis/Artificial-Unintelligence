@@ -1,0 +1,10 @@
+{
+    "name": "AdfUbhExample",
+    "references": [
+        "AdfUbhScript"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

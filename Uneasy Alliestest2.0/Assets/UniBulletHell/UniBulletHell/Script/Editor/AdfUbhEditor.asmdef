@@ -1,0 +1,12 @@
+{
+    "name": "AdfUbhEditor",
+    "references": [
+        "AdfUbhScript"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

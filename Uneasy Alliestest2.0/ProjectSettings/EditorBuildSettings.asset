@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Lobby1.unity
+    guid: 86261d6b23d9924469b704dd7a7d72bf
+  - enabled: 1
     path: Assets/Uneasy Allies Main Menu.unity
     guid: fc03316387f2d5246bdc5a9716f96bef
   - enabled: 1

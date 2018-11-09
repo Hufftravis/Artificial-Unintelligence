@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour {
 
 	private Rigidbody2D createBullet(){
 		GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+        //Put in NetworkSurver.spoon
 		bullet.transform.position = launchPosition.position;
 		return bullet.GetComponent<Rigidbody2D>();
 	}

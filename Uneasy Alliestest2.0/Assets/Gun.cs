@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class Gun : MonoBehaviour {
     public GameObject bulletPrefab;
@@ -12,9 +13,11 @@ public class Gun : MonoBehaviour {
 
 	private Rigidbody2D createBullet(){
 		GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+		NetworkServer.Spawn (bullet);
         //Put in NetworkSurver.spoon
 		bullet.transform.position = launchPosition.position;
 		return bullet.GetComponent<Rigidbody2D>();
+
 	}
     void firebullet()
     {

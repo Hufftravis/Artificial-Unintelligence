@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 114529059526929486}
   - component: {fileID: 58986694437143052}
+  - component: {fileID: 114643852956626894}
+  - component: {fileID: 114072459727009394}
   m_Layer: 0
   m_Name: PlayerBulletRoot
   m_TagString: Untagged
@@ -307,6 +309,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.15
+--- !u!114 &114072459727009394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 2
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 3
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114529059526929486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -319,3 +342,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
+--- !u!114 &114643852956626894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 97
+    i1: 122
+    i2: 4
+    i3: 67
+    i4: 39
+    i5: 97
+    i6: 212
+    i7: 101
+    i8: 40
+    i9: 87
+    i10: 192
+    i11: 60
+    i12: 134
+    i13: 213
+    i14: 72
+    i15: 115
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0

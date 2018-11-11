@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Gun : MonoBehaviour {
+public class Gun : NetworkBehaviour {
     public GameObject bulletPrefab;
     public Transform launchPosition;
 	private AudioSource audioSource;
@@ -20,6 +20,7 @@ public class Gun : MonoBehaviour {
 		return bullet.GetComponent<Rigidbody2D>();
 
 	}
+	[Command]
     void firebullet()
     {
 		Rigidbody2D bullet = createBullet ();

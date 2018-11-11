@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58084055831098106}
   - component: {fileID: 114608459451585348}
   - component: {fileID: 114082613830633184}
+  - component: {fileID: 114388993283527612}
   - component: {fileID: 50101481143970008}
   - component: {fileID: 114497463368573984}
   - component: {fileID: 114644113673970678}
@@ -153,6 +154,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 100000, guid: 617a04432761d4652857c03c86d54873, type: 2}
   launchPosition: {fileID: 4896511972779848}
+--- !u!114 &114388993283527612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1309568529137766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94be269960767a5499b25d5bee85641f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotUs: {fileID: 1309568529137766}
 --- !u!114 &114497463368573984
 MonoBehaviour:
   m_ObjectHideFlags: 1

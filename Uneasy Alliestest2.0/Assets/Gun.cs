@@ -16,7 +16,6 @@ public class Gun : MonoBehaviour {
 
         //Put in NetworkSurver.spoon
 		bullet.transform.position = launchPosition.position;
-		NetworkServer.Spawn (bullet);
 		return bullet.GetComponent<Rigidbody2D>();
 
 	}
@@ -24,7 +23,7 @@ public class Gun : MonoBehaviour {
     {
 		Rigidbody2D bullet = createBullet ();
 		bullet.velocity = this.transform.right * 20;
-
+		NetworkServer.Spawn (bullet);
 
     }
 

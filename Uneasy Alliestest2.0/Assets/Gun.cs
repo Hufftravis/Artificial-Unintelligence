@@ -20,7 +20,6 @@ public class Gun : MonoBehaviour {
 		return bullet.GetComponent<Rigidbody2D>();
 
 	}
-	[Command]
     void firebullet()
     {
 		Rigidbody2D bullet = createBullet ();

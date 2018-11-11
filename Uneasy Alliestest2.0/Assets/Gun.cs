@@ -21,7 +21,7 @@ public class Gun : NetworkBehaviour {
 
 	}
 	[Command]
-    void firebullet()
+    void Cmdfirebullet()
     {
 		Rigidbody2D bullet = createBullet ();
 		bullet.velocity = this.transform.right * 20;
@@ -43,7 +43,7 @@ public class Gun : NetworkBehaviour {
                   InvokeRepeating("firebullet", 0f, 0.1f);
 
               }
-            firebullet();
+            Cmdfirebullet();
 
         }
 		if (Input.GetMouseButtonUp(0) )

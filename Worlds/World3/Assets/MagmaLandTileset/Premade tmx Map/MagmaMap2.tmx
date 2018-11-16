@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="10" tilewidth="128" tileheight="128">
+ <tileset firstgid="1" name="MagmaGround" tilewidth="128" tileheight="128">
+  <image source="MagmaGround.png" width="768" height="1024"/>
+ </tileset>
+ <tileset firstgid="49" name="MagmaObject" tilewidth="128" tileheight="128">
+  <image source="MagmaObject.png" width="768" height="1152"/>
+ </tileset>
+ <layer name="ground" width="14" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxtklELgkAQhE+zuLKyeqg48MU6C8R+Yz+tn9YszsKy3MPHKnfjzA6mEEIECUxgB67gZviE8Osx++U5PKgRRtCADgw8K/EErfESTqAG5wK1OZN5BBtm1KyTyZE4J/P9RM+D0Ure7O6opqHPGrzAbLTZ+GUy8n1rOmuplbl3edUvGt2wdPpVTQUuhUy6f2RvK2orduQ1HXO8XQ7V6n3dI7k9hLvrXP6NP9lNDb8=
+  </data>
+ </layer>
+ <layer name="object1" width="14" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAQCAOYiANmJKo3glKW0PpGCidCMRJQJwMxClAnAoV9wfiACCOgNrlSMB8PyR2GJpduNQFA3EIEh/mFphdsWjqYG4iBsRDaVg4wdyUAKVh/sUF0N3uh1UVBCDHH3I4IfuPFLejA5jbAU28DqM=
+  </data>
+ </layer>
+ <layer name="object2" width="14" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAANyB2ZyAd+ACxLw45ZyB2AWJXEs30BGIvIPbGo8YQiI2A2B+IA5DEY9DUGQOxCRLfHIgtoOwwKB0KxOFo+iyB2AqJbwvEdoQcDgT2QOxAhDp0AAt/GyQxDyR2HBDHY9GHL/wJgWgS1QMAAKQKNg==
+  </data>
+ </layer>
+ <layer name="object3" width="14" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBicIHqgHUAm8CBTXyQQRxFQ4wbE7mSY7QPEvmTowwYAuicCfQ==
+  </data>
+ </layer>
+</map>

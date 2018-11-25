@@ -25,17 +25,17 @@ public class Projectile : MonoBehaviour {
 		}
 
 	}
-    void OnCollisionEnter()
+    void OnTriggerEnter()
     {
 		//reinstate when player health is established.
 		/*if (GetComponent<Collider>().gameObject.GetComponent<Player>() != null 
 			&& GetComponent<Collider>().gameObject.tag == "Player") {
 			GetComponent<Collider>().gameObject.GetComponent<Player>().TakeDamage(damage);
 		}*/
-		if (GetComponent<Collider>().gameObject.GetComponent<BossHealth>() != null 
+		/*if (GetComponent<Collider>().gameObject.GetComponent<BossHealth>() != null 
 			&& GetComponent<Collider>().gameObject.tag == "Boss") {
 			GetComponent<Collider>().gameObject.GetComponent<BossHealth>().TakeDamage(damage);
-		}
+		}*/
 		Destroy (gameObject);
 
     }

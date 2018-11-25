@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 114156044515219688}
   - component: {fileID: 114318348642557802}
   - component: {fileID: 23623800049169974}
+  - component: {fileID: 114616212228460984}
   m_Layer: 0
   m_Name: EnemyBulletParent3D
   m_TagString: Untagged
@@ -202,5 +203,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c4b9a98922c4d84a86e7b56eaad892a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114616212228460984
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae7b1982997fd418ded8ad130e9665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

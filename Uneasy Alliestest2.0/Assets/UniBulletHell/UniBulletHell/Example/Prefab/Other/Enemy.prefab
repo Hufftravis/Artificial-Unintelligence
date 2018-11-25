@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 11400002}
   - component: {fileID: 11400000}
   - component: {fileID: 11400006}
+  - component: {fileID: 114406832629366346}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -216,3 +217,14 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 0
+--- !u!114 &114406832629366346
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ae7b1982997fd418ded8ad130e9665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 50101481143970008}
   - component: {fileID: 114497463368573984}
   - component: {fileID: 114644113673970678}
+  - component: {fileID: 114219017203502872}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Player
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1309568529137766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.13, y: -1.42, z: -0.12058973}
+  m_LocalPosition: {x: -15.598599, y: -7.411684, z: -0.12058973}
   m_LocalScale: {x: 4.130724, y: 4.130721, z: 4.130721}
   m_Children:
   - {fileID: 4917178998012442}
@@ -86,13 +87,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794869687651322}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.06, y: 0.25, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4291346482639736}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4917178998012442
 Transform:
   m_ObjectHideFlags: 1
@@ -100,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1984449687371764}
   m_LocalRotation: {x: -0, y: -0, z: 0.38643828, w: 0.9223153}
-  m_LocalPosition: {x: 0.0010000281, y: 0.083, z: 0}
+  m_LocalPosition: {x: -0.003, y: 0.083, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4291346482639736}
@@ -113,9 +114,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1309568529137766}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &58084055831098106
 CircleCollider2D:
@@ -154,6 +155,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 100000, guid: 617a04432761d4652857c03c86d54873, type: 2}
   launchPosition: {fileID: 4896511972779848}
+--- !u!114 &114219017203502872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1309568529137766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fa41239ca70ff45ae2ac15bbee709a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  IsDead: 0
 --- !u!114 &114388993283527612
 MonoBehaviour:
   m_ObjectHideFlags: 1

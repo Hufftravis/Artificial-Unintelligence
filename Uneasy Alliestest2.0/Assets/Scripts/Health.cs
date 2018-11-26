@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
 	public int currentHealth = maxHealth;
 	public bool IsDead = false;
 	//private GameManager Gamecontroller;
-	private GameObject TextHolder;
+
 	void Start(){
 		
 		//GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
@@ -24,7 +24,11 @@ public class Health : MonoBehaviour
 			currentHealth = 0;
 			Debug.Log("Dead!");
 			IsDead = true;
+
 			//Gamecontroller.GameOver();
+			Destroy(gameObject);
+
+			this.enabled = false;
 
 
 		}

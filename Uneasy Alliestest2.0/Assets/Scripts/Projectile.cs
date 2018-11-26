@@ -23,6 +23,11 @@ public class Projectile : MonoBehaviour {
 			Debug.Log ("ouch");
 			boss.TakeDamage (damage);
 		}
+
+		Health playerhealth = collision.gameObject.GetComponent<Health> ();
+		if (playerhealth != null) {
+			playerhealth.TakeDamage (damage/5);
+		}
 		}
 
 

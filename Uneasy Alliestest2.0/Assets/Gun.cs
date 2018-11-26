@@ -24,7 +24,8 @@ public class Gun : NetworkBehaviour {
     void Cmdfirebullet()
     {
 		Rigidbody2D bullet = createBullet ();
-		bullet.velocity = this.transform.right * 20;
+
+		bullet.velocity = this.transform.up * 20;
 
 
     }
@@ -40,7 +41,7 @@ public class Gun : NetworkBehaviour {
         {
              if (!IsInvoking("Cmdfirebullet"))
               {
-                  InvokeRepeating("Cmdfirebullet", 0f, 0.1f);
+                  InvokeRepeating("Cmdfirebullet", 0f, 0.6f);
 
               }
             Cmdfirebullet();

@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class LocalSetup : NetworkBehaviour {
-
+	public SpecialManager test;
 	// Use this for initialization
 
 	public GameObject NotUs;
 	// Use this for initialization
 	void Start () {
+		test = GameObject.FindObjectOfType<SpecialManager> ();
+		test.playernum += 1;
 		if (isLocalPlayer){
 			return;
 		}

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossShot : MonoBehaviour {
-	public int damage = 30;
+	public int damage = 60;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,5 +19,9 @@ public class BossShot : MonoBehaviour {
 		if (playerhealth != null) {
 			playerhealth.TakeDamage (damage/5);
 		}
+	}
+	void OnBecameInvisible()
+	{
+		Destroy(gameObject);
 	}
 }

@@ -17,15 +17,16 @@ public class Projectile : MonoBehaviour {
     {
         Destroy(gameObject);
     }
-	void OnTriggerEnter2D(Collision2D x){
-		if (GetComponent<CircleCollider2D>().gameObject.GetComponent<BossHealth>() != null 
-			&& GetComponent<CircleCollider2D>().gameObject.tag == "Boss") {
-			GetComponent<CircleCollider2D>().gameObject.GetComponent<BossHealth>().TakeDamage(damage);
-			Destroy (gameObject);
+	void OnTriggerEnter2D(Collider2D collision){
+		BossHealth boss = collision.gameObject.GetComponent<BossHealth> ();
+		if (boss != null) {
+			Debug.Log ("ouch");
+			boss.TakeDamage (damage);
+		}
 		}
 
-	}
-    void OnTriggerEnter()
+
+	void OnTriggerEnter()
     {
 		//reinstate when player health is established.
 		/*if (GetComponent<Collider>().gameObject.GetComponent<Player>() != null 

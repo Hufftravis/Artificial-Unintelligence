@@ -768,6 +768,31 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114246094847776404, guid: 08cd599f8e60c084e94a61914297a07d,
+        type: 2}
+      propertyPath: m_bulletPrefab
+      value: 
+      objectReference: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 2}
+    - target: {fileID: 50362313172413080, guid: 08cd599f8e60c084e94a61914297a07d,
+        type: 2}
+      propertyPath: m_UseFullKinematicContacts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50362313172413080, guid: 08cd599f8e60c084e94a61914297a07d,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61031211820077068, guid: 08cd599f8e60c084e94a61914297a07d,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50362313172413080, guid: 08cd599f8e60c084e94a61914297a07d,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08cd599f8e60c084e94a61914297a07d, type: 2}
   m_IsPrefabParent: 0

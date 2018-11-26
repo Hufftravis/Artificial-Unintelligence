@@ -38,9 +38,9 @@ public class Gun : NetworkBehaviour {
 	void Update () {
         if (Input.GetMouseButtonDown(0))
         {
-             if (!IsInvoking("firebullet"))
+             if (!IsInvoking("Cmdfirebullet"))
               {
-                  InvokeRepeating("firebullet", 0f, 0.1f);
+                  InvokeRepeating("Cmdfirebullet", 0f, 0.1f);
 
               }
             Cmdfirebullet();
@@ -48,7 +48,7 @@ public class Gun : NetworkBehaviour {
         }
 		if (Input.GetMouseButtonUp(0) )
                 {
-                    CancelInvoke("firebullet");
+                    CancelInvoke("Cmdfirebullet");
                 }
         
 

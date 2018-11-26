@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour {
     {
         Destroy(gameObject);
     }
-	void OnTriggerEnter2D(){
+	void OnTriggerEnter2D(Collision2D x){
 		if (GetComponent<CircleCollider2D>().gameObject.GetComponent<BossHealth>() != null 
 			&& GetComponent<CircleCollider2D>().gameObject.tag == "Boss") {
 			GetComponent<CircleCollider2D>().gameObject.GetComponent<BossHealth>().TakeDamage(damage);

@@ -11,23 +11,24 @@ public class Gun : NetworkBehaviour {
 	private float currentTime;
 
 
-	private Rigidbody2D createBullet(){
-		GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+	/*private Rigidbody2D createBullet(){
+		//GameObject bullet = Instantiate(bulletPrefab) as GameObject;
 
         //Put in NetworkSurver.spoon
-		bullet.transform.position = launchPosition.position;
-		NetworkServer.Spawn (bullet);
-		return bullet.GetComponent<Rigidbody2D>();
+		//bullet.transform.position = launchPosition.position;
+		//NetworkServer.Spawn (bullet);
+		//return bullet.GetComponent<Rigidbody2D>();
 
-	}
+	}*/
 	[Command]
     void Cmdfirebullet()
     {
-		Rigidbody2D bullet = createBullet ();
+		var bullet = (GameObject)Instantiate (bulletPrefab, launchPosition.position, launchPosition.rotation);
+		//Rigidbody2D bullet = createBullet ();
 
-		bullet.velocity = this.transform.up * 20;
+		bullet.GetComponent<Rigidbody2D>().velocity = this.transform.up * 20;
 
-
+		NetworkServer.Spawn (bullet);
     }
 
 

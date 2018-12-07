@@ -30,7 +30,7 @@ public class Health : MonoBehaviour
 			//Gamecontroller.GameOver();
 			Destroy(gameObject);
 
-			this.enabled = false;
+
 
 
 		}
